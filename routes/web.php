@@ -9,3 +9,11 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/meditation', function () {
+    return view('meditation');
+});
+
+Route::get('/beranda', function () {
+    return "Halaman Beranda";
+});
