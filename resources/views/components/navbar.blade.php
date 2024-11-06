@@ -16,11 +16,11 @@
 
         <!-- Navigation Links (Hidden on small screens, visible on large screens) -->
         <nav id="navLinks" class="hidden lg:flex space-x-8">
-            <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">Home</a>
-            <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">History Emotions</a>
-            <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">Artikel</a>
-            <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">Meditation</a>
-            <a href="#" class="text-gray-800 hover:text-purple-600 font-medium">Konseling</a>
+            <a href="/" class="text-gray-800 hover:text-purple-600 font-medium">Home</a>
+            <a href="/mood" class="text-gray-800 hover:text-purple-600 font-medium">History Emotions</a>
+            <a href="/article" class="text-gray-800 hover:text-purple-600 font-medium">Article</a>
+            <a href="/meditation" class="text-gray-800 hover:text-purple-600 font-medium">Meditation</a>
+            <a href="/conseling" class="text-gray-800 hover:text-purple-600 font-medium">Conseling</a>
         </nav>
 
         <!-- Sign In Button (Hidden on small screens, visible on large screens) -->
