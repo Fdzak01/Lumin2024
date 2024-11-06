@@ -11,8 +11,11 @@
 <body>
     <div>
         <ol>
-            <li>{{ $page_name }}</li>
+            <li>{{ $page_header }}</li>
         </ol>
+    </div>
+    <div class="card-body">
+        {{ $page_content }}
     </div>
 </body>
 </html>
