@@ -14,7 +14,7 @@
             <li>{{ $page_header }}</li>
         </ol>
     </div>
-    <div class="card-body">
+    <div>
         {{ $page_content }}
     </div>
 </body>
