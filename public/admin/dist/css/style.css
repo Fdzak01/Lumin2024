@@ -654,3 +654,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
+/* Sembunyikan scrollbar di desktop */
+@media (min-width: 1024px) {
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Edge */
+  }
+  .scrollbar-hide {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+  }
+}

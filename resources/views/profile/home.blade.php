@@ -61,96 +61,64 @@
         </body>  
     </x-slot>
     <x-slot name="page_content">
-        <section class="container mx-auto mt-10 px-4">
-            <h3 class="text-2xl font-semibold mb-6">Mindfulness</h3>
+        <section class="container m-2 p-2">
+            <h3 class="text-2xl font-semibold mb-6">Daily Emotions</h3>
+            <h3 class="text-sm">Bagaimana Persaanmu Hari Ini</h3>
             
             <!-- Horizontal Scrollable Cards -->
-            <div class="flex gap-6 overflow-x-auto scrollbar-hide p-2">
+            <div class="flex gap-5 overflow-x-auto py-10">
                 <!-- Card 1 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <h4 class="font-semibold mt-4">Stretching Yoga</h4>
-                    <p class="text-gray-500 text-sm mt-2">Memulai pelatihan pikiran dengan aman dan juga nyaman.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
+                <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
+                    <img src="{{("../admin/dist/img/sadness.png")}}" alt="" class="w-24">
+                    <h4 class="font-semibold mt-4">I'm Feeling Sad</h4>
                 </div>
     
                 <!-- Card 2 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <h4 class="font-semibold mt-4">Breathing Exercises</h4>
-                    <p class="text-gray-500 text-sm mt-2">Latihan pernapasan untuk relaksasi pikiran.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
-                </div>
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <h4 class="font-semibold mt-4">Breathing Exercises</h4>
-                    <p class="text-gray-500 text-sm mt-2">Latihan pernapasan untuk relaksasi pikiran.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
-                </div>
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <h4 class="font-semibold mt-4">Breathing Exercises</h4>
-                    <p class="text-gray-500 text-sm mt-2">Latihan pernapasan untuk relaksasi pikiran.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
-                </div>
-                <!-- Card 3 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <h4 class="font-semibold mt-4">Guided Meditation</h4>
-                    <p class="text-gray-500 text-sm mt-2">Meditasi terpandu untuk ketenangan jiwa.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
+                <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
+                        <img src="{{("../admin/dist/img/ennui.png")}}" alt="" class="w-36">
+                        <h4 class="font-semibold mt-4 text-start px-5">I'm Feeling Ennui</h4>
                 </div>
     
-                <!-- Card 4 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
+                <!-- Card 3 -->
+                <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
+                    <div class="flex-none rounded-lg w-30">
+                        <img src="{{("../admin/dist/img/joy.png")}}" alt="" class="w-48">
+                        <h4 class="font-semibold mt-4 text-start px-5">I'm Feeling Joy</h4>
                     </div>
-                    <h4 class="font-semibold mt-4">Relaxing Music</h4>
-                    <p class="text-gray-500 text-sm mt-2">Musik relaksasi untuk tidur nyenyak.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
                 </div>
+
+                <!-- Card 4 -->
+                <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
+                    <img src="{{("../admin/dist/img/anxiety.png")}}" alt="" class="w-36">
+                    <h4 class="font-semibold mt-4 text-start px-5">I'm Feeling Anxiety</h4>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
+                    <img src="{{("../admin/dist/img/anger.png")}}" alt="" class="w-24">
+                    <h4 class="font-semibold mt-4">I'm Feeling Anger</h4>
+                </div>
+    
             </div>
         </section>
+
+        <!-- Consuling -->
+
+        <section class="my-2">
+            <div class="bg-white w-full shadow-lg">
+                <img src="{{("../admin/dist/img/psicholog.png")}}" class="bg-gray-50 rounded-full w-24 border-" alt="">
+                <h3>Counseling Registration</h3>
+
+            </div>
+        </section>
+
+        <!-- Quotes -->
         <section class="container mx-auto mt-10 px-4">
-            <h3 class="text-2xl font-semibold mb-6">Mindfulness</h3>
+            <h3 class="text-2xl font-semibold mb-6">Quotes</h3>
+            <h3 class="text-sm">Awali hari dengan Quotes yang indah</h3>
             
             <!-- Horizontal Scrollable Cards -->
-            <div class="flex gap-6 overflow-x-auto scrollbar-hide p-2">
+            <div class="flex gap-3 overflow-x-auto scrollbar-hide p-2">
                 <!-- Card 1 -->
                 <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
                     <div class="flex justify-end">
