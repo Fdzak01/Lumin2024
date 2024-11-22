@@ -1,4 +1,5 @@
 <x-navbar></x-navbar>
+
 <x-layout> 
     <x-slot name="page_name">Lumin-App</x-slot>
     <x-slot name="page_header">
@@ -68,7 +69,7 @@
             <div class="flex gap-5 overflow-x-auto py-10">
                 <!-- Card 1 -->
                 <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
-                    <img src="{{ asset ("admin/dist/img/sadness.png")}}" alt="" class="w-24">
+                    <img src="{{("../admin/dist/img/sadness.png")}}" alt="" class="w-24">
                     <h4 class="font-semibold mt-4">I'm Feeling Sad</h4>
                 </div>
     
@@ -81,7 +82,7 @@
                 <!-- Card 3 -->
                 <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
                     <div class="flex-none rounded-lg w-30">
-                        <img src="{{ asset("admin/dist/img/joy.jpg")}}" alt="" class="w-48">
+                        <img src="{{("../admin/dist/img/joy.png")}}" alt="" class="w-48">
                         <h4 class="font-semibold mt-4 text-start px-5">I'm Feeling Joy</h4>
                     </div>
                 </div>
@@ -103,78 +104,253 @@
 
         <!-- Consuling -->
 
-        <section class="my-2">
-            <div class="bg-white w-full shadow-lg">
-                <img src="{{("../admin/dist/img/psicholog.png")}}" class="bg-gray-50 rounded-full w-24 border-" alt="">
-                <h3>Counseling Registration</h3>
-
+        <section class="my-20 mx-1">
+            <div class="bg-white w-full shadow-lg px-5 py-3 flex relative rounded-md">
+                <img src="{{('../admin/dist/img/psicholog.png')}}" class="bg-gray-50 rounded-full w-20 h-20 border-black border-b-1 shadow-lg" alt="">
+                <h3 class="align-bottom pt-8 ps-3 font-nunito font-bold">Counseling Registration</h3>
+                <!-- Icon -->
+                <div class="icon rounded-full border-2 border-[#471637] w-10 h-10 absolute top-3 right-3 flex items-center justify-center my-5">
+                    <i class="fas fa-message text-[#471637]"></i>
+                </div>
             </div>
         </section>
+        
 
         <!-- Quotes -->
-        <section class="container mx-auto mt-10 px-4">
-            <h3 class="text-2xl font-semibold mb-6">Quotes</h3>
-            <h3 class="text-sm">Awali hari dengan Quotes yang indah</h3>
+        <section class="container mx-auto px-4 my-20">
+            <h3 class="text-2xl font-semibold my-2">Quotes</h3>
+            <h3 class="text-sm my-2">Awali hari dengan Quotes yang indah</h3>
             
             <!-- Horizontal Scrollable Cards -->
             <div class="flex gap-3 overflow-x-auto scrollbar-hide p-2">
                 <!-- Card 1 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
+                <div class="flex-none bg-white rounded-lg shadow-lg w-2/5 p-5 group relative overflow-hidden">
+                    <div class="flex justify-end relative z-10">
+                        <img src="{{("../admin/dist/img/logo.png")}}" alt="" class="w-full h-20" />
                     </div>
-                    <h4 class="font-semibold mt-4">Stretching Yoga</h4>
-                    <p class="text-gray-500 text-sm mt-2">Memulai pelatihan pikiran dengan aman dan juga nyaman.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+                    <h4 class="absolute inset-0 flex items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30">
+                        General
+                    </h4>
                 </div>
     
                 <!-- Card 2 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
+                <div class="flex-none bg-white rounded-lg shadow-lg w-2/5 p-5 group relative overflow-hidden">
+                    <div class="flex justify-end relative z-10">
+                        <img src="{{("../admin/dist/img/logo.png")}}" alt="" class="w-full h-20" />
                     </div>
-                    <h4 class="font-semibold mt-4">Breathing Exercises</h4>
-                    <p class="text-gray-500 text-sm mt-2">Latihan pernapasan untuk relaksasi pikiran.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+                    <h4 class="absolute inset-0 flex items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30">
+                        Personal Growth
+                    </h4>
                 </div>
     
                 <!-- Card 3 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
+                <div class="flex-none bg-white rounded-lg shadow-lg w-2/5 p-5 group relative overflow-hidden">
+                    <div class="flex justify-end relative z-10">
+                        <img src="{{("../admin/dist/img/logo.png")}}" alt="" class="w-full h-20" />
                     </div>
-                    <h4 class="font-semibold mt-4">Guided Meditation</h4>
-                    <p class="text-gray-500 text-sm mt-2">Meditasi terpandu untuk ketenangan jiwa.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
-                </div>
-    
-                <!-- Card 4 -->
-                <div class="flex-none bg-white rounded-lg shadow-lg w-64 p-5">
-                    <div class="flex justify-end">
-                        <button>
-                            <svg class="h-6 w-6 text-gray-400 hover:text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <h4 class="font-semibold mt-4">Relaxing Music</h4>
-                    <p class="text-gray-500 text-sm mt-2">Musik relaksasi untuk tidur nyenyak.</p>
-                    <button class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Start</button>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"></div>
+                    <h4 class="absolute inset-0 flex items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30">
+                        Work and Productivity
+                    </h4>
                 </div>
             </div>
         </section>
+
+                <!-- Meditations -->
+                <section class="container mx-auto px-4 my-20">
+                    <h3 class="text-2xl font-semibold my-2">Popular Meditations</h3>
+                    <h3 class="text-sm my-2">Menjadi lebih sehat dengan melakukan meditasi</h3>
+                    
+                    <!-- Horizontal Scrollable Cards -->
+                    <div class="flex gap-3 overflow-x-auto scrollbar-hide p-2">
+                        <!-- Card 1 -->
+                        <div class="mx-12">
+                            <!-- Card Container -->
+                            <div class="bg-white rounded-lg shadow-lg w-full p-5 relative overflow-hidden">
+                                <!-- Logo Section -->
+                                <div class="flex justify-end relative z-10">
+                                    <img src="{{('../admin/dist/img/logo.png')}}" alt="Logo" class="w-full h-20">
+                                </div>
+                            </div>
+                        
+                            <!-- Content Section -->
+                            <div class="flex items-center mt-4 mx-2 space-x-4">
+                                <!-- Text Section -->
+                                <div class="tulisan">
+                                    <h3 class="font-nunito font-extrabold text-lg">
+                                        Meditasi Mindfulness
+                                    </h3>
+                                    <h4 class="font-nunito font-normal text-sm flex items-center space-x-2">
+                                        <i class="fa-regular fa-hourglass"></i>
+                                        <span>15 Minutes</span>
+                                    </h4>
+                                </div>
+                        
+                                <!-- Button -->
+                                <button class="bg-[#2E588A] font-nunito font-extrabold rounded-lg text-white px-4 py-2">
+                                    Start
+                                </button>
+                            </div>
+                        </div>
+                        
+            
+                        <!-- Card 2 -->
+                        <div class="mx-12">
+                            <!-- Card Container -->
+                            <div class="bg-white rounded-lg shadow-lg w-full p-5 relative overflow-hidden">
+                                <!-- Logo Section -->
+                                <div class="flex justify-end relative z-10">
+                                    <img src="{{('../admin/dist/img/logo.png')}}" alt="Logo" class="w-full h-20">
+                                </div>
+                            </div>
+                        
+                            <!-- Content Section -->
+                            <div class="flex items-center mt-4 mx-2 space-x-4">
+                                <!-- Text Section -->
+                                <div class="tulisan">
+                                    <h3 class="font-nunito font-extrabold text-lg">
+                                        Meditasi Mindfulness
+                                    </h3>
+                                    <h4 class="font-nunito font-normal text-sm flex items-center space-x-2">
+                                        <i class="fa-regular fa-hourglass"></i>
+                                        <span>15 Minutes</span>
+                                    </h4>
+                                </div>
+                        
+                                <!-- Button -->
+                                <button class="bg-[#2E588A] font-nunito font-extrabold rounded-lg text-white px-4 py-2">
+                                    Start
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- Card 3 -->
+                        <div class="mx-12">
+                            <!-- Card Container -->
+                            <div class="bg-white rounded-lg shadow-lg w-full p-5 relative overflow-hidden">
+                                <!-- Logo Section -->
+                                <div class="flex justify-end relative z-10">
+                                    <img src="{{('../admin/dist/img/logo.png')}}" alt="Logo" class="w-full h-20">
+                                </div>
+                            </div>
+                        
+                            <!-- Content Section -->
+                            <div class="flex items-center mt-4 mx-2 space-x-4">
+                                <!-- Text Section -->
+                                <div class="tulisan">
+                                    <h3 class="font-nunito font-extrabold text-lg">
+                                        Meditasi Mindfulness
+                                    </h3>
+                                    <h4 class="font-nunito font-normal text-sm flex items-center space-x-2">
+                                        <i class="fa-regular fa-hourglass"></i>
+                                        <span>15 Minutes</span>
+                                    </h4>
+                                </div>
+                        
+                                <!-- Button -->
+                                <button class="bg-[#2E588A] font-nunito font-extrabold rounded-lg text-white px-4 py-2">
+                                    Start
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--- Music -->
+
+                <section class="flex flex-col items-center m-5">
+                    <h1 class="text-center font-nunito font-extrabold text-3xl text-[#6B2152]">JOURNEY WITH MUSIC <br> TO MENTAL HEALTH</h1>
+                    <div class="flex justify-between w-4/5 h-full py-5">
+                    <!-- Wrapper untuk Card pertama dan ketiga -->
+                        <!-- Card pertama -->
+                        <div class="bg-white rounded-lg shadow-lg w-1/3 h-60 p-5 mt-auto">Card 1</div>
+                        <!-- Card kedua (Tinggi lebih panjang, berada di tengah atas) -->
+                    <div class="bg-white rounded-lg shadow-lg w-1/3 h-96 p-5">Card 2</div>
+                        <!-- Card ketiga -->
+                        <div class="bg-white rounded-lg shadow-lg w-1/3 h-40 p-5 mt-auto">Card 3</div>
+                    </div>
+                </section>
+
+
+                <!-- Article Section -->
+                <section class="bg-gray-100 py-8">
+                    <div class="container mx-auto px-4">
+                    <!-- Section Title -->
+                    <div class="border-l-4 border-[#623E76] pl-4 mb-6">
+                        <h1 class="font-nunito font-bold text-3xl">What New Today</h1>
+                    </div>
+                
+                    <!-- Content Grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <!-- Left Large Column -->
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                        <!-- Placeholder for content -->
+                        <p class="text-center text-gray-500">Large article section (add content here).</p>
+                        </div>
+                
+                        <!-- Right Column -->
+                        <div class="lg:col-span-2 grid gap-6">
+                        <!-- Article Card -->
+                        <div class="flex items-start">
+                            <!-- Thumbnail -->
+                            <div class="bg-gray-200 rounded-lg w-2/5 h-28"></div>
+                            <!-- Article Details -->
+                            <div class="ml-4 flex flex-col justify-between">
+                            <!-- Category Label -->
+                            <span class="bg-[#88A8CD] text-white font-nunito w-3/12 text-center font-semibold rounded-full px-3 py-1 text-xs">
+                                Health
+                            </span>
+                            <!-- Title -->
+                            <h2 class="mt-2 text-base font-semibold">
+                                Viral! Fufufafa adalah Gibran Rakabuming
+                            </h2>
+                            <!-- Date -->
+                            <div class="flex items-center text-xs text-gray-500 mt-2">
+                                <i class="fas fa-calendar"></i>
+                                <p class="ml-1">October 22, 2024</p>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <!-- Repeat Article Card -->
+                        <div class="flex items-start">
+                            <div class="bg-gray-200 rounded-lg w-2/5 h-28"></div>
+                            <div class="ml-4 flex flex-col justify-between">
+                            <span class="bg-[#88A8CD] text-white font-nunito w-3/12 text-center font-semibold rounded-full px-3 py-1 text-xs">
+                                Health
+                            </span>
+                            <h2 class="mt-2 text-base font-semibold">
+                                Viral! Fufufafa adalah Gibran Rakabuming
+                            </h2>
+                            <div class="flex items-center text-xs text-gray-500 mt-2">
+                                <i class="fas fa-calendar"></i>
+                                <p class="ml-1">October 22, 2024</p>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <!-- Repeat Article Card -->
+                        <div class="flex items-start">
+                            <div class="bg-gray-200 rounded-lg w-2/5 h-28"></div>
+                            <div class="ml-4 flex flex-col justify-between">
+                            <span class="bg-[#88A8CD] text-white font-nunito w-3/12 text-center font-semibold rounded-full px-3 py-1 text-xs">
+                                Health
+                            </span>
+                            <h2 class="mt-2 text-base font-semibold">
+                                Viral! Fufufafa adalah Gibran Rakabuming
+                            </h2>
+                            <div class="flex items-center text-xs text-gray-500 mt-2">
+                                <i class="fas fa-calendar"></i>
+                                <p class="ml-1">October 22, 2024</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
     </x-slot>
     
 </x-layout>
