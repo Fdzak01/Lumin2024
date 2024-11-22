@@ -1,5 +1,4 @@
 <x-navbar></x-navbar>
-
 <x-layout> 
     <x-slot name="page_name">Lumin-App</x-slot>
     <x-slot name="page_header">
@@ -69,7 +68,7 @@
             <div class="flex gap-5 overflow-x-auto py-10">
                 <!-- Card 1 -->
                 <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
-                    <img src="{{("../admin/dist/img/sadness.png")}}" alt="" class="w-24">
+                    <img src="{{ asset ("admin/dist/img/sadness.png")}}" alt="" class="w-24">
                     <h4 class="font-semibold mt-4">I'm Feeling Sad</h4>
                 </div>
     
@@ -82,7 +81,7 @@
                 <!-- Card 3 -->
                 <div class="flex-none rounded-lg m-0 p-0 mx-10 px-10">
                     <div class="flex-none rounded-lg w-30">
-                        <img src="{{("../admin/dist/img/joy.png")}}" alt="" class="w-48">
+                        <img src="{{ asset("admin/dist/img/joy.jpg")}}" alt="" class="w-48">
                         <h4 class="font-semibold mt-4 text-start px-5">I'm Feeling Joy</h4>
                     </div>
                 </div>

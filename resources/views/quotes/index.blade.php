@@ -1,27 +1,24 @@
 <x-navbar></x-navbar>
 
 <x-layout>
-    <x-slot name="page_header">Lumin-App</x-slot>
+    <x-slot name="page_header"></x-slot>
 
     <x-slot name="page_content">
-        <div class="relative h-screen bg-cover bg-center" style="background-image: url('/admin/dist/img/logo.png');">
-            <!-- Layer overlay untuk kontras -->
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-
-            <!-- Konten teks -->
-            <div class="relative z-10 flex items-center justify-center h-full">
-                <div class="text-center">
-                    <h1 class="text-4xl font-bold mb-4 text-white">
+        <div class="bg-cover bg-center font-sans" style="background-image: url('/admin/dist/img/logo.png')">
+            <!-- Main Content -->
+            <main clasAs="container mx-auto px-4 mt-10 mb-10 flex justify-center items-center">
+                <div class="bg-white bg-opacity-90 rounded-lg shadow-lg p-8 text-center max-w-2xl mt-24 mb-24">
+                    <blockquote class="text-2xl md:text-4xl font-bold text-gray-800 leading-relaxed">
                         "Pertumbuhan bukan tentang mencapai kesempurnaan, tetapi tentang terus berusaha menjadi lebih baik setiap harinya."
-                    </h1>
-                    <p class="text-gray-300 text-lg">
-                        03 November 2024, Lumin
-                    </p>
+                    </blockquote>
+                    <p class="mt-6 text-lg text-gray-500">03 November 2024, Lumin</p>
                 </div>
-            </div>
+            </main>
+
         </div>
 
     </x-slot>
 </x-layout>
 
 <x-footer></x-footer>
+<!-- style="background-image: url('/admin/dist/img/logo.png'); -->

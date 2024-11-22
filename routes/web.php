@@ -48,3 +48,19 @@ Route::get('/conseling', function () {
     return view('consults/index'); 
 });
 
+Route::get('/profile/register', function () {
+    return view('profile/register');
+});
+
+Route::get('/profile', function () {
+    return view('profile/login');
+});
+
+Route::get('/profile/home', function () {
+    return view('profile/home');
+});
+
+//Quotes
+Route::get('/quotes', function () {
+    return view('quotes/index'); 
+});
