@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 //Home
 Route::get('/', function () {
-    return view('index'); 
+    return view('profile/login'); 
 });
 
 
@@ -41,6 +41,12 @@ Route::get('/article', function () {
 //Meditatios
 Route::get('/meditation', function () {
     return view('meditations/index'); 
+});
+Route::get('/meditation/intro', function () {
+    return view('meditations/intro'); 
+});
+Route::get('/meditation/stopwatch', function () {
+    return view('meditations/stopwatch'); 
 });
 
 //Conseling

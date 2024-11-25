@@ -1,10 +1,11 @@
 <x-navbar></x-navbar>
+
 <x-layout>
     <x-slot name="page_header">
     </x-slot>
     <x-slot name="page_content">
         <!-- Form Section -->
-        <div class="bg-white shadow-md rounded-md p-4 max-w-md mx-auto">
+        <div class="bg-white shadow-lg rounded-md p-4 max-w-md mx-auto my-10 " >
             <h2 class="text-lg font-bold mb-4">Pengajuan Konseling</h2>
             <div class="mb-2">
                 <label for="namaLengkap" class="block text-gray-700 text-sm font-bold mb-2">Nama Lengkap</label>
